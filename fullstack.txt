@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+            }
+            #one
+            {
+               background-color: black;
+                height:70px;
+                
+            }
+            #t,a{
+                color:white;
+            }
+            a{
+                text-decoration: none;
+                margin-right:20px ;
+            }
+            #two
+            {
+                text-align: center;
+                float: left;
+                width:30%;
+                height:70px;
+            }
+            #three
+            {
+                text-align: center;
+                float:right;
+                width:70%;
+                height: 70px;
+                line-height:70px;
+         …[8:20 pm, 19/06/2022] Chandu Dasari:   }
+            img{
+                border-radius: 50%;
+                border:2px;
+                
+            }
+            #four
+            {
+                align-items: center;
+                
+            }
+            
+            
+        </style>
+
+    </head>
+    <body>
+        <div id="one">
+            
+            <div id="two">
+                <h2 id="t">
+                    My Portofolio
+                </h2></div>
+                <div id="three" >
+                    <a href="#">Home</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Contact</a>
+
+                
+            </div>
+        </div>
+        <div id="four" >
+            <table >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" length="300px" width="300px">
+                    </td>
+                    <td>
+                        <h3>Hi there!!</h3>
+                        <h2>I am Sneha</h2>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae commodi sequi accusantium corporis officia libero aliquid, fuga explicabo reprehenderit obcaecati neque eos, eveniet nemo hic nesciunt quam sunt corrupti tenetur.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+            
+            </table>
+        
+</html>
+         
+
+
+
+
+
+2
+import { Component, Input } from '@angular/core';
+import { Hero } from './hero';
+@Component({
+  selector: 'hero-detail',
+  template: `
+    <div *ngIf="hero">
+      <h2>{{hero.name}} details!</h2>
+      <div><label>id: </label>{{hero.id}}</div>
+      <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </div>
+    </div>
+  `
+})
+export class HeroDetailComponent {
+  @Input() hero: Hero;
+}
+
+
+5####
+import { Component, Input } from '@angular/core';
+import { Hero } from './hero';
+@Component({
+  selector: 'hero-detail',
+  template: `
+    <div *ngIf="hero">
+      <h2>{{hero.name}} details!</h2>
+      <div><label>id: </label>{{hero.id}}</div>
+      <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </div>
+    </div>
+  `
+})
+export class HeroDetailComponent {
+  @Input() hero: Hero;
+}
+
+
+
+
+3###
+import { BrowserModule } from '@angular/platform-browser';
+ import { NgModule } from '@angular/core';
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { FlexLayoutModule } from '@angular/flex-layout'; 
+import { MatButtonModule, MatDividerModule, MatIconModule, MatMenuModule, MatProgressSpinnerModule, MatTableModule, MatToolbarModule } from '@angular/material'; 
+import { HttpClientModule } from '@angular/common/http'; 
+import { FormsModule } from '@angular/forms'; 
+import { AppRoutingModule } from './app-routing.module'; 
+import { AppComponent } from './app.component'; @NgModule({ declarations: [ AppComponent ],
+ imports: [ AppRoutingModule, BrowserModule, BrowserAnimationsModule, HttpClientModule, FlexLayoutModule, MatToolbarModule, MatMenuModule, MatIconModule, MatButtonModule, MatTableModule, MatDividerModule, MatProgressSpinnerModule, FormsModule, ], providers: [], bootstrap: [AppComponent] }) export class AppModule { }
+
+
+
